@@ -1,261 +1,259 @@
-# Welcome
-# Control flow statements
+## Xush kelibsiz  
+### Oqim boshqaruvi operatorlari  
 
-Automated grading of homework assignments and tests
-- fork this repository
-- solve the task
-- commit with proper message
-- commit with proper message
+Uyga vazifalar va test topshiriqlarini avtomatlashtirilgan baholash  
+- Ushbu repozitoriyani fork qiling  
+- Vazifani yeching  
+- To'g'ri xabar bilan commit qiling  
+- To'g'ri xabar bilan commit qiling  
 
-# Problems
-## if01
+### Vazifalar  
+#### if01  
 
-  If the number is positive, increase it to 1, else leave unchanged.
+  Agar son musbat bo'lsa, uni 1 ga oshiring, aks holda o'zgarmasdan qoldiring.  
 
-**Example 1:**
+**1-misol:**  
 
-```Python
-Input: a=1
-Output: 2
+```Python  
+Kiritish: a=1  
+Natija: 2  
+```  
 
-```
+**2-misol:**  
 
-**Example 2:**
+```Python  
+Kiritish: a=-5  
+Natija: -5  
+```  
 
-```Python
-Input: a=-5
-Output: -5
+**Cheklovlar:**  
+- -10<sup>18</sup> ≤ num ≤ 10<sup>18</sup>  
 
-```
+---
 
-**Constraints:**
-- -10<sup>18</sup><=num<=10<sup>18</sup>
+#### if02  
 
-## if02
+  Agar son musbat bo'lsa, uni 1 ga oshiring, aks holda uni 2 ga kamaytiring.  
 
-  If the number is positive, increase it to 1, else decrease it to 2.
+**1-misol:**  
 
-**Example 1:**
+```Python  
+Kiritish: a=5  
+Natija: 6  
+```  
 
-```Python
-Input: a=5
-Output: 6
+**2-misol:**  
 
-```
+```Python  
+Kiritish: a=-1  
+Natija: -3  
+```  
 
-**Example 2:**
+**Cheklovlar:**  
+- -10<sup>18</sup> ≤ num ≤ 10<sup>18</sup>  
 
-```Python
-Input: a=-1
-Output: -3
+---
 
-```
+#### if03  
 
-**Constraints:**
-- -10<sup>18</sup><=num<=10<sup>18</sup>
+  Agar son musbat bo'lsa, uni 1 ga oshiring, aks holda uni 2 ga kamaytiring. Agar u 0 bo'lsa, 10 qiymatini bering.  
 
-## if03
+**1-misol:**  
 
-  If the number is positive, increase it to 1, else decrease it to 2. If it is 0, assign 10.
+```Python  
+Kiritish: a=-9  
+Natija: -11  
+```  
 
-**Example 1:**
+**2-misol:**  
 
-```Python
-Input: a=-9
-Output: -11
+```Python  
+Kiritish: a=3  
+Natija: 4  
+```  
 
-```
+**Cheklovlar:**  
+- -10<sup>18</sup> ≤ num ≤ 10<sup>18</sup>  
 
-**Example 2:**
+---
 
-```Python
-Input: a=3
-Output: 4
+#### if04  
 
-```
+  Berilgan sonlarda nechta musbat son borligini toping.  
 
-**Constraints:**
-- -10<sup>18</sup><=num<=10<sup>18</sup>
+**1-misol:**  
 
-## if04
+```Python  
+Kiritish: a=-2 b=4 c=1  
+Natija: 2  
+```  
 
-  Find how many positive numbers there are in the given numbers.
+**2-misol:**  
 
-**Example 1:**
+```Python  
+Kiritish: a=3 b=-3 c=-6  
+Natija: 1  
+```  
 
-```Python
-Input: a=-2 b=4 c=1
-Output: 2
+**Cheklovlar:**  
+- -10<sup>18</sup> ≤ num ≤ 10<sup>18</sup>  
 
-```
+---
 
-**Example 2:**
+#### if05  
 
-```Python
-Input: a=3 b=-3 c=-6
-Output: 1
+  Berilgan sonlarda nechta manfiy son borligini toping.  
 
-```
+**1-misol:**  
 
-**Constraints:**
-- -10<sup>18</sup><=num<=10<sup>18</sup>
+```Python  
+Kiritish: a=-2 b=4 c=1  
+Natija: 1  
+```  
 
-## if05
+**2-misol:**  
 
-  Find how many negative numbers there are in the given numbers.
+```Python  
+Kiritish: a=3 b=-3 c=-6  
+Natija: 2  
+```  
 
-**Example 1:**
+**Cheklovlar:**  
+- -10<sup>18</sup> ≤ num ≤ 10<sup>18</sup>  
 
-```Python
-Input: a=-2 b=4 c=1
-Output: 1
+---
 
-```
+#### if06  
 
-**Example 2:**
+  Berilgan sonlarda nechta musbat va nechta manfiy son borligini toping.  
 
-```Python
-Input: a=3 b=-3 c=-6
-Output: 2
+**1-misol:**  
 
-```
+```Python  
+Kiritish: a=-2 b=4 c=1  
+Natija: "ko'p musbat sonlar bor"  
+```  
 
-**Constraints:**
-- -10<sup>18</sup><=num<=10<sup>18</sup>
+**2-misol:**  
 
-## if06
+```Python  
+Kiritish: a=3 b=-3 c=-6  
+Natija: "ko'p manfiy sonlar bor"  
+```  
 
-  Find how many positive and how many negative numbers there are in the given numbers.
+**Cheklovlar:**  
+- -10<sup>18</sup> ≤ num ≤ 10<sup>18</sup>  
 
-**Example 1:**
+---
 
-```Python
-Input: a=-2 b=4 c=1
-Output: "there are a lot of positive numbers"
+#### if07  
 
-```
+  Berilgan a butun soni uchun quyidagi shartlarni tekshiring:  
+    "musbat toq son",  
+    "musbat juft son",  
+    "manfiy toq son",  
+    "manfiy juft son",  
+    "son nolga teng"  
 
-**Example 2:**
+**1-misol:**  
 
-```Python
-Input: a=3 b=-3 c=-6
-Output: "there are a lot of negative numbers"
+```Python  
+Kiritish: a=57  
+Natija: "musbat toq son"  
+```  
 
-```
+**2-misol:**  
 
-**Constraints:**
-- -10<sup>18</sup><=num<=10<sup>18</sup>
+```Python  
+Kiritish: a=-24  
+Natija: "manfiy juft son"  
+```  
 
-## if07
+**Cheklovlar:**  
+- -10<sup>9</sup> ≤ num ≤ 10<sup>9</sup>  
 
-  Given an integer a, check the following conditions:
-    "positive odd number",
-    "positive even number",
-    "negative odd number",
-    "negative even number",
-    "the number is zero"
+---
 
-**Example 1:**
+#### if08  
 
-```Python
-Input: a=57
-Output: "positive odd number"
+  Berilgan butun son a uchun quyidagi shartlarni tekshiring:  
+    "ikki xonali toq son",  
+    "ikki xonali juft son",  
+    "uch xonali toq son",  
+    "uch xonali juft son"  
 
-```
+**1-misol:**  
 
-**Example 2:**
+```Python  
+Kiritish: a=57  
+Natija: "ikki xonali toq son"  
+```  
 
-```Python
-Input: a=-24
-Output: "negative even number"
+**2-misol:**  
 
-```
+```Python  
+Kiritish: a=-242  
+Natija: "uch xonali juft son"  
+```  
 
-**Constraints:**
-- -10<sup>9</sup><=num<=10<sup>9</sup>
+**Cheklovlar:**  
+- -10<sup>3</sup> < num < 10<sup>3</sup>  
 
-## if08
+---
 
-  Given an integer a, check the following conditions:
-    "two-digit odd number",
-    "two-digit even number",
-    "three-digit odd number",
-    "three-digit even number"
+#### if09  
 
-**Example 1:**
+  Ikki xonali butun son berilgan.  
+  Sonning raqamlarini o'rnini almashtiring. Agar hosil bo'lgan son eski sondan kichik yoki unga teng bo'lsa, True, aks holda False qaytaring.  
 
-```Python
-Input: a=57
-Output: "two-digit odd number"
+**1-misol:**  
 
-```
+```Python  
+Kiritish: a=57  
+Natija: False  
+```  
 
-**Example 2:**
+**2-misol:**  
 
-```Python
-Input: a=-242
-Output: "three-digit even number"
+```Python  
+Kiritish: a=21  
+Natija: True  
+```  
 
-```
+**Cheklovlar:**  
+- -10<sup>3</sup> < num < 10<sup>3</sup>  
 
-**Constraints:**
-- -10<sup>3</sup> < num < 10 <sup>3</sup>
+---
 
-## if09
+#### if10  
 
-    The two-digit integer is given.
-    Replace the digits of the number.
-    True if the resulting number is less than or equal to the old number, otherwise return False.
+  Sizga berilgan harorat sharoitlariga ko'ra xabarni ko'rsating (Selsiusda):  
+  - Harorat <0: "Muzlab qoldi"  
+  - Harorat 1-10: "Juda sovuq"  
+  - Harorat 11-20: "Sovuq"  
+  - Harorat 21-30: "Normal"  
+  - Harorat 31-40: "Issiq"  
+  - Harorat >40: "Juda issiq"  
 
-**Example 1:**
+**1-misol:**  
 
-```Python
-Input: a=57
-Output: False
+```Python  
+Kiritish: a=21  
+Natija: "Normal"  
+```  
 
-```
+**2-misol:**  
 
-**Example 2:**
+```Python  
+Kiritish: a=-4  
+Natija: "Muzlab qoldi"  
+```  
 
-```Python
-Input: a=21
-Output: True
+**Cheklovlar:**  
+- -10<sup>3</sup> < num < 10<sup>3</sup>  
 
-```
+---
 
-**Constraints:**
-- -10<sup>3</sup> < num < 10 <sup>3</sup>
-
-## if10
-
-    Display the message according to the following temperature conditions given to you in Celsius:
-    Temp<0: "Freezing"
-    Temp 1-10: "Very Cold"
-    Temp 11-20: "Cold"
-    Temp 21-30: "Normal"
-    Temp 31-40: "Hot"
-    Temp >40: "Very Hot"
-
-**Example 1:**
-
-```Python
-Input: a=21
-Output: "Normal"
-
-```
-
-**Example 2:**
-
-```Python
-Input: a=-4
-Output: "Freezing
-
-```
-
-**Constraints:**
-- -10<sup>3</sup> < num < 10 <sup>3</sup>
-
-
-# Warning
-- don't copy other solutions or any solution
-- don't remove comments
+### Ogohlantirish  
+- Boshqalarning yechimini yoki biror yechimni nusxa ko'chirmang  
+- Kommentlarni o'chirmang  
