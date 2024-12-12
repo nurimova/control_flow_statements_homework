@@ -125,7 +125,7 @@ Natija: 2
 
 #### if06  
 
-  Berilgan sonlarda nechta musbat va nechta manfiy son borligini toping.  
+  Berilgan sonlarda nechta musbat va nechta manfiy son borligini toping va qayis biri ko'pligini chiqaring.  
 
 **1-misol:**  
 
