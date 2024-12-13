@@ -11,4 +11,14 @@ def main(a):
     Returns:
         string: the message to print
     """
-    return
+    if 9<a<100 and a%2==0:
+        return 'ikki xonali juft son'
+    if 9<a<100 and a%2!=0:
+        return 'ikki xonali toq son'
+    if 99<a<1000 and a%2==0:
+        return 'uch xonali juft son'
+    if 99<a<1000 and a%2!=0:
+        return 'uch xonali toq son'
+    else:
+        return 'bunday sonni bilmayman'
+print(main(9638))

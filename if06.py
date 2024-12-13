@@ -13,4 +13,19 @@ def main(a,b,c):
     Returns:
         string: string with the result
     """
-    return
+    s=0
+    p=0
+    if a>=0:
+        s+=1
+    elif a<0:
+        p+=1
+    if b>=0:
+        s+=1
+    elif b<0:
+        p+=1
+    if c>=0:
+        s+=1
+    elif c<0:
+        p+=1
+    return s,p
+print(main(-1,8,6))
